@@ -8,35 +8,244 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<section class="hero">
-		<div class="container">
-			<div class="hero-block">
-				<a href="#">
-					<picture class="hero__logo">
-						<source srcset="img/logo.webp 1x" type="image/webp">
-						<img src="img/logo.png" srcset="img/logo.png" alt="visionary fitness">
-					</picture>
-				</a>
-				<ul class="hero-menu">
-					<li class="hero-menu__list">
-						<a href="#" class="hero-menu__item">Каталог</a>
-					</li>
-					<li class="hero-menu__list">
-						<a href="#" class="hero-menu__item">Обратная связь</a>
-					</li>
-					<li class="hero-menu__list">
-						<a href="#" class="hero-menu__item">Помощь</a>
-					</li>
-				</ul>
+	<section class="hero" id="#hero">
+			<div class="hero-slider">
+				<div class="hero__sl1">
+					<div class="hero__slide1 container">
+						<a href="#hero">
+							<picture class="hero__logo">
+								<source srcset="img/logo.webp 1x" type="image/webp">
+								<img src="img/logo.png" srcset="img/logo.png" alt="visionary fitness">
+							</picture>
+						</a>
+						<ul class="hero-menu">
+							<li class="hero-menu__list">
+								<a href="#" class="hero-menu__item">Каталог</a>
+							</li>
+							<li class="hero-menu__list">
+								<a href="#footer" class="hero-menu__item">Обратная связь</a>
+							</li>
+							<li class="hero-menu__list">
+								<a href="#" class="hero-menu__item">Помощь</a>
+							</li>
+						</ul>
+					</div>
+					<div class="hero__slide2 container">
+						<h1 class="hero__title">СКИДКИ до 25%</h1>
+						<span class="hero__subtitle">на все модели до конца февраля</span>
+						<a class="hero__button button" href="#">КУПИТЬ</a>
+					</div>
+				</div>
+				<div class="hero__sl2">
+					<div class="hero__slide1 container">
+						<a href="#">
+							<picture class="hero__logo">
+								<source srcset="img/logo.webp 1x" type="image/webp">
+								<img src="img/logo.png" srcset="img/logo.png" alt="visionary fitness">
+							</picture>
+						</a>
+						<ul class="hero-menu">
+							<li class="hero-menu__list">
+								<a href="#" class="hero-menu__item">Каталог</a>
+							</li>
+							<li class="hero-menu__list">
+								<a href="#" class="hero-menu__item">Обратная связь</a>
+							</li>
+							<li class="hero-menu__list">
+								<a href="#" class="hero-menu__item">Помощь</a>
+							</li>
+						</ul>
+					</div>
+					<div class="hero__slide2 container">
+						<h1 class="hero__title">СКИДКА 25%</h1>
+						<span class="hero__subtitle">на новые модели до конца февраля</span>
+						<a class="hero__btn button" href="#">КУПИТЬ</a>
+					</div>
+				</div>
 			</div>
-			<div class="hero-text">
-				<h1 class="hero__title">СКИДКИ до 25%</h1>
-				<span class="hero__subtitle">на все модели до конца февраля</span>
-				<button class="hero__button button">
-					<a href="#">КУПИТЬ</a>
-				</button>
+			<div class="hero-arrows container">
+				<div class="hero-arrows__left">
+					<img src="img/left-arrow.png" alt="">
+				</div>
+				<div class="hero-arrows__right">
+					<img src="img/right-arrow.png" alt="">
+				</div>
+			</div>
+	</section>
+
+	<section class="catalog">
+		<div class="container">
+			<div class="catalog-block">
+				<h2 class="catalog__title">Тренируйся в стильном и комфортном
+				образе от Visionary Fitness</h2>
+				<div class="catalog-cards">
+					<div class="catalog__card">
+						<img class="catalog__img" src="img/card-1.jpg" alt="">
+						<div id="rectangle">
+							<span class="sale">-10%</span>
+						</div>
+						<div class="catalog__text">
+							<h3 class="catalog__name">Костюм NON STOP</h3>
+							<span class="catalog__subtitle">рашгард/лосины, оранжевый</span>
+							<span class="catalog__line">4 190 руб</span>
+							<span class="catalog__price">3 770 руб</span>
+						</div>
+					</div>
+					<div class="catalog__card">
+						<img class="catalog__img" src="img/card-2.jpg" alt="">
+						<div id="rectangle">
+							<span class="sale">-10%</span>
+						</div>
+						<div class="catalog__text">
+							<h3 class="catalog__name">Костюм COSMO</h3>
+							<span class="catalog__subtitle">рашгард/топ/лосины, серый</span>
+							<span class="catalog__line">5 200 руб</span>
+							<span class="catalog__price">4 680 руб</span>
+						</div>
+					</div>
+					<div class="catalog__card">
+						<img class="catalog__img" src="img/card-3.jpg" alt="">
+						<div id="rectangle">
+							<span class="sale">-10%</span>
+						</div>
+						<div class="catalog__text">
+							<h3 class="catalog__name">Костюм POWER UP</h3>
+							<span class="catalog__subtitle">рашгард/лосины, розовый</span>
+							<span class="catalog__line">4 190 руб</span>
+							<span class="catalog__price">3 770 руб</span>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="catalog__button button">ВЕСЬ КАТАЛОГ</a>
 			</div>
 		</div>
 	</section>
+
+	<section class="offer">
+		<div class="container">
+			<div class="offer-block">
+				<div class="offer__item">
+					<div class="offer__image">
+						<img src="img/production.png" alt="" class="offer__img">
+					</div>
+					<div class="offer__text">
+						<h3 class="offer__title">Своё производство</h3>
+						<span class="offer__subtitle">Вы не переплатите за одежду,<br>
+							у нас своё производство
+							и нет посреднических наценок </span>
+					</div>
+				</div>
+				<div class="offer__item">
+					<div class="offer__image">
+						<img src="img/first.png" alt="" class="offer__img">
+					</div>
+					<div class="offer__text">
+						<h3 class="offer__title">Качество</h3>
+						<span class="offer__subtitle">Используем инновационные
+							технологичные ткани, чтобы
+							обеспечить максимальную
+							производительность во время
+							тренировок.</span>
+					</div>
+				</div>
+				<div class="offer__item">
+					<div class="offer__image">
+						<img src="img/delivery.png" alt="" class="offer__img">
+					</div>
+					<div class="offer__text text">
+						<h3 class="offer__title">Бесплатная доставка</h3>
+						<span class="offer__subtitle">При заказе от 4 000 ₽<br> доставка бесплатна</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="insta">
+		<div class="container">
+			<div id="instafeed">
+
+			</div>
+		</div>
+	</section>
+
+	<section class="footer" id="footer">
+		<div class="container">
+			<div class="footer-block">
+				<div class="footer-logo">
+					<picture class="footer__pic">
+						<source srcset="img/logo-footer.webp 1x" type="image/webp">
+						<img src="img/logo-footer.png" srcset="img/logo-footer.png" alt="visionary fitness">
+					</picture>
+				</div>
+				<div class="footer-problem">
+					<a href="#" class="footer__questions">ВОПРОСЫ</a>
+					<a href="#" class="footer__answer">Доставка</a>
+					<a href="#" class="footer__answer">Оплата</a>
+					<a href="#" class="footer__answer">Гарантия</a>
+					<a href="#" class="footer__answer">Размерная сетка</a>
+				</div>
+				<div class="footer-info">
+					<span class="footer__document">ИП Юрьев Иван
+						Александрович</span>
+					<span class="footer__document">ИНН 662106831902</span>
+					<span class="footer__document">ОГРН 317665800152557</span>
+				</div>
+				<div class="footer-contacts">
+					<div class="footer__item">
+						<span>
+							<picture>
+								<source srcset="img/telephone.webp 1x" type="image/webp">
+								<img src="img/telephone.png" class="footer__img" srcset="img/telephone.png" alt="телефон">
+							</picture>
+						</span>
+						<a href="tel:89122704813" class="footer__inform">8-912-270-48-13</a>
+					</div>
+					<div class="footer__item">
+						<span>
+							<picture>
+								<source srcset="img/adress.webp 1x" type="image/webp">
+								<img src="img/adress.png" class="footer__img" srcset="img/adress.png" alt="адрес">
+							</picture>
+						</span>
+						<span class="footer__inform">г.Екатеринбург</span>
+					</div>
+					<div class="footer__item">
+						<span>
+							<picture>
+								<source srcset="img/mail.webp 1x" type="image/webp">
+								<img src="img/mail.png" class="footer__img" srcset="img/mail.png" alt="электронная почта">
+							</picture>
+						</span>
+
+						<a href="mailto:vsnfit66@gmail.com" class="footer__inform">vsnfit66@gmail.com</a>
+					</div>
+				</div>
+				<div class="footer-social">
+					<a href="https://www.instagram.com/vsn_fitness/" class="footer__icon">
+						<picture>
+							<source srcset="img/insta.webp 1x" type="image/webp">
+							<img src="img/insta.png" srcset="img/insta.png" alt="инстаграм">
+						</picture>
+					</a>
+					<a href="https://vk.com/visionary_fitness" class="footer__icon">
+						<picture>
+							<source srcset="img/vk.webp 1x" type="image/webp">
+							<img src="img/vk.png" srcset="img/vk.png" alt="вконтакте">
+						</picture>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/jquery.instagramFeed.min.js"></script>
+	<script src="js/insta.js"></script>
+
 </body>
 </html>

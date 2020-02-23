@@ -1,8 +1,73 @@
+.my-dots 
+  position: absolute
+  display: block
+  width: 100%
+  padding: 0
+  list-style: none
+  text-align: center
+  top: 0
+  margin-top: 380px
+  margin-left: -3px
+
+.my-dots li 
+  position: relative
+  display: inline-block
+  width: 10px
+  height: 10px
+  margin: 0 5px
+  padding: 0
+  cursor: pointer
+
+.my-dots li button 
+  font-size: 0
+  line-height: 0
+  display: block
+  width: 20px
+  height: 20px
+  padding: 5px
+  cursor: pointer
+  color: transparent
+  border: 0
+  outline: none
+  background: transparent
+
+.my-dots li button:hover,
+.my-dots li button:focus 
+  outline: none
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before 
+  opacity: 1
+
+.my-dots li button:before 
+  font-family: 'slick'
+  font-size: 6px
+  line-height: 20px
+  position: absolute
+  top: 0
+  left: 0
+  width: 20px
+  height: 20px
+  content: url('../img/dots.svg')
+  text-align: center
+  opacity: .25
+  color: black
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.my-dots li.slick-active button:before 
+  opacity: .75
+  color: black
+
 .hero
-	background: url('../img/hero-bg.jpg') no-repeat center
-	padding-top: 17px
 	font-size: 19px
-	&-block 
+	&-slider
+		position: relative
+	&__sl1
+		padding-top: 15px
+		background-size: cover
+		background: url('../img/hero-bg.jpg') no-repeat center
+	&__slide1 
 		display: flex
 		justify-content: space-between
 	&-menu 
@@ -14,16 +79,49 @@
 			margin-right: 47px
 		&__list:last-child
 			margin-right: 0
-	&-text
+		&__item
+			color: $text-color
+	&__slide2
 		text-align: center
 	&__title
-		margin-top: 67px
+		margin-top: 60px
 		font-size: 42px
 	&__subtitle
-		margin-top: 16px
+		margin-top: 15px
 		+reg
-		margin-bottom: 38px
+		margin-bottom: 36px
 		display: block
 	&__button
-		margin-bottom: 158px
+		margin-bottom: 150px
+		padding: 8px 48px
+		border: 3px solid $text-color
+		color: $text-color
+		&:hover
+			background-color: $text-color
+			color: $btn-color
+			transition: 0.3s
+	&__sl2 
+		color: $btn-color
+		padding-top: 15px
+		background-size: cover
+		background: url('../img/sleder-2.jpg') no-repeat center
+	&__btn 
+		margin-bottom: 150px
+		padding: 8px 48px
+		border: 3px solid $btn-color
+		color: $btn-color
+		&:hover
+			background-color: $btn-color
+			color: $text-color
+			transition: 0.3s
+	&-arrows
+		display: flex
+		justify-content: space-between
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		margin-top: 200px
+		cursor: pointer
+	
 		

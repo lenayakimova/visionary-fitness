@@ -1,0 +1,45 @@
+#rectangle
+	width: 65px
+	height: 36px
+	background-color: $text-color
+	position: absolute
+	top: 0
+	right: 0
+.sale
+	display: inline-block
+	margin-top: 5px
+	color: $btn-color
+.catalog
+	font-size: 20px
+	text-align: center
+	&__title
+		font-size: 37px
+		margin-bottom: 40px
+	&-cards 
+		display: flex
+		justify-content: space-between
+	&__card
+		position: relative
+	&__img
+		position: relative
+	&__name
+		margin-top: 17px
+		margin-bottom: 2px
+	&__subtitle
+		font-size: 17px
+		display: block
+		margin-bottom: 15px
+		+reg 
+	&__line
+		text-decoration: line-through
+		margin-right: 15px
+		+reg 
+	&__button
+		border: 3px solid $text-color
+		margin-top: 30px
+		padding: 8px 20px
+		color: $text-color
+		&:hover
+			background-color: $text-color
+			color: $btn-color
+			transition: 0.3s
