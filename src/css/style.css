@@ -933,6 +933,7 @@ a {
 .offer {
   padding-top: 50px;
   text-align: center;
+  height: 350px;
 }
 
 .offer-block {
@@ -949,6 +950,26 @@ a {
 
 .offer__item {
   width: 33%;
+  position: relative;
+  padding: 50px 0;
+}
+
+.offer__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.offer__text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-top: 100px;
 }
 
 .offer__title {
@@ -1034,8 +1055,8 @@ a {
 }
 
 .footer__img {
-  width: 16px;
   height: 16px;
+  width: 16px;
 }
 
 .footer__icon {

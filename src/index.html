@@ -33,7 +33,7 @@
 					<div class="hero__slide2 container">
 						<h1 class="hero__title">СКИДКИ до 25%</h1>
 						<span class="hero__subtitle">на все модели до конца февраля</span>
-						<a class="hero__button button" href="#">КУПИТЬ</a>
+						<a class="hero__button button" href="#catalog">КУПИТЬ</a>
 					</div>
 				</div>
 				<div class="hero__sl2">
@@ -59,7 +59,7 @@
 					<div class="hero__slide2 container">
 						<h1 class="hero__title">СКИДКА 25%</h1>
 						<span class="hero__subtitle">на новые модели до конца февраля</span>
-						<a class="hero__btn button" href="#">КУПИТЬ</a>
+						<a class="hero__btn button" href="#catalog">КУПИТЬ</a>
 					</div>
 				</div>
 			</div>
@@ -73,7 +73,7 @@
 			</div>
 	</section>
 
-	<section class="catalog">
+	<section class="catalog" id="#catalog">
 		<div class="container">
 			<div class="catalog-block">
 				<h2 class="catalog__title">Тренируйся в стильном и комфортном
@@ -125,9 +125,7 @@
 		<div class="container">
 			<div class="offer-block">
 				<div class="offer__item">
-					<div class="offer__image">
-						<img src="img/production.png" alt="" class="offer__img">
-					</div>
+					<img src="img/production.png" alt="" class="offer__img">
 					<div class="offer__text">
 						<h3 class="offer__title">Своё производство</h3>
 						<span class="offer__subtitle">Вы не переплатите за одежду,<br>
@@ -163,20 +161,20 @@
 
 	<section class="insta">
 		<div class="container">
-			<div id="instafeed">
-
-			</div>
+			<div id="instafeed"></div>
 		</div>
 	</section>
 
-	<section class="footer" id="footer">
+	<section class="footer" id="#footer">
 		<div class="container">
 			<div class="footer-block">
 				<div class="footer-logo">
-					<picture class="footer__pic">
-						<source srcset="img/logo-footer.webp 1x" type="image/webp">
-						<img src="img/logo-footer.png" srcset="img/logo-footer.png" alt="visionary fitness">
-					</picture>
+					<a href="#hero" class="footer__logotip">
+						<picture class="footer__pic">
+							<source srcset="img/logo-footer.webp 1x" type="image/webp">
+							<img src="img/logo-footer.png" srcset="img/logo-footer.png" alt="visionary fitness">
+						</picture>
+					</a>
 				</div>
 				<div class="footer-problem">
 					<a href="#" class="footer__questions">ВОПРОСЫ</a>
@@ -193,7 +191,7 @@
 				</div>
 				<div class="footer-contacts">
 					<div class="footer__item">
-						<span>
+						<span class="footer__image">
 							<picture>
 								<source srcset="img/telephone.webp 1x" type="image/webp">
 								<img src="img/telephone.png" class="footer__img" srcset="img/telephone.png" alt="телефон">
@@ -202,7 +200,7 @@
 						<a href="tel:89122704813" class="footer__inform">8-912-270-48-13</a>
 					</div>
 					<div class="footer__item">
-						<span>
+						<span class="footer__image">
 							<picture>
 								<source srcset="img/adress.webp 1x" type="image/webp">
 								<img src="img/adress.png" class="footer__img" srcset="img/adress.png" alt="адрес">
@@ -211,7 +209,7 @@
 						<span class="footer__inform">г.Екатеринбург</span>
 					</div>
 					<div class="footer__item">
-						<span>
+						<span class="footer__image">
 							<picture>
 								<source srcset="img/mail.webp 1x" type="image/webp">
 								<img src="img/mail.png" class="footer__img" srcset="img/mail.png" alt="электронная почта">
