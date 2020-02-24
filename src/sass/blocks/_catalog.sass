@@ -1,3 +1,4 @@
+
 #rectangle
 	width: 65px
 	height: 36px
@@ -5,6 +6,121 @@
 	position: absolute
 	top: 0
 	right: 0
+.overlay
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,.5)
+	display: none
+.popup
+	position: fixed
+	left: 50%
+	top: 50%
+	width: 780px
+	height: 534px
+	transform: translate(-50%,-50%)
+	background-color: $btn-color
+	border: 5px solid $text-color
+	padding: 20px
+	z-index: 99
+	display: none
+	&__pop
+		display: flex
+	&-image
+		display: flex
+		align-items: center
+	&__large
+		text-align: left
+	&__preview
+		overflow: hidden
+		margin-left: 15px
+		display: inline-flex
+		flex-direction: column
+		cursor: pointer
+		margin-right: 30px
+	&__little
+		margin-bottom: 22px
+		&:last-child
+			margin-bottom: 0
+	&-text
+		font-size: 13px	
+	&__title
+		text-align: center
+		font-size: 16px
+		margin-bottom: 22px
+	&__subtitle
+		font-size: 13px
+		display: block
+		margin-bottom: 10px
+		+reg
+	&__line
+		text-decoration: line-through
+		+reg
+	&__size
+		text-align: left
+	&__dimension
+		font-size: 13px
+	&__button
+		text-align: center
+		border: 2px solid $text-color
+		color: $text-color
+		width: 21px
+		height: 21px
+		margin-right: 3px
+		font-size: 16px
+		margin-bottom: 10px
+	&__buy
+		text-align: left
+		+reg
+	&__outline
+		margin-right: 3px
+		+bold
+	&__block
+		display: inline-flex
+		flex-direction: column
+	&-form
+		text-align: left
+		+reg
+		&__title
+			font-size: 16px
+			text-align: center
+			margin-bottom: 5px
+			+bold
+		&__input
+			background-color: $form-color
+			border: 1px solid $form-color
+			padding: 5px
+			width: 133px
+			height: 25px
+			margin-right: 5px
+			margin-bottom: 7px
+			outline: none
+		&__city, &__text
+			outline: none
+			margin-bottom: 8px
+			width: 275px
+			background-color: $form-color
+			border: 1px solid $form-color
+			padding: 5px
+		&__button
+			margin-left: 75px
+			margin-top: 7px
+			border: 3px solid $text-color
+			color: $text-color
+			padding: 4px 27px
+			&:hover
+				background-color: $text-color
+				color: $btn-color
+				transition: 0.3s
+.close-btn
+	position: absolute
+	top: 3px
+	right: 10px
+	font-size: 2rem
+	&:hover
+		cursor: pointer
 .sale
 	display: inline-block
 	margin-top: 5px
@@ -22,6 +138,7 @@
 		position: relative
 	&__img
 		position: relative
+		cursor: pointer
 	&__name
 		margin-top: 17px
 		margin-bottom: 2px

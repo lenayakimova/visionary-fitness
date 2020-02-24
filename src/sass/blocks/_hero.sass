@@ -58,7 +58,10 @@
 .my-dots li.slick-active button:before 
   opacity: .75
   color: black
-
+.slick-active 
+  outline: none
+.navbar
+	padding-top: 15px
 .hero
 	font-size: 19px
 	&-slider
@@ -71,10 +74,11 @@
 		display: flex
 		justify-content: space-between
 	&-menu 
+		margin: 0
+		padding: 0
 		display: flex
 		list-style: none
 		align-items: center
-		padding-top: 7px
 		&__list
 			margin-right: 47px
 		&__list:last-child
